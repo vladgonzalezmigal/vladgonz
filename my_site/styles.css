@@ -8,3 +8,39 @@
     font-family: InterVariable, sans-serif;
   }
 }
+
+body {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  /* For mobile screens, make it responsive */
+  max-width: 100vw;
+}
+
+.top-links ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2rem 0;
+  justify-content: flex-start;
+}
+
+.top-links a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.top-links a:hover {
+  color: #0070f3;
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  body {
+    width: 300px;
+  }
+}
