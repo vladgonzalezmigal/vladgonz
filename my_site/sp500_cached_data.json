@@ -1,0 +1,57 @@
+{
+  "data": [
+    {
+      "ticker": "FXAIX",
+      "url": "https://fundresearch.fidelity.com/mutual-funds/summary/315911750",
+      "type": "Mutual Fund",
+      "fullName": "Fidelity 500 Index Fund",
+      "grossAsOfDate": "04/29/2025",
+      "grossExpenseRatio": "0.015",
+      "netExpenseRatio": "0.015",
+      "netAsOfDate": "04/29/2025"
+    },
+    {
+      "ticker": "SWPXX",
+      "url": "https://www.schwabassetmanagement.com/products/swppx",
+      "type": "Mutual Fund",
+      "fullName": "Schwab S&P 500 Index Fund SWPPX",
+      "grossAsOfDate": "07/31/2025",
+      "netAsOfDate": "07/31/2025",
+      "netExpenseRatio": "0.02",
+      "grossExpenseRatio": "0.02"
+    },
+    {
+      "ticker": "IVV",
+      "url": "https://www.ishares.com/us/products/239726/ishares-core-sp-500-etf",
+      "type": "ETF",
+      "fullName": "iShares Core S&P 500 ETF",
+      "grossAsOfDate": "08/01/2025",
+      "netAsOfDate": "08/01/2025",
+      "netExpenseRatio": "0.03",
+      "grossExpenseRatio": "0.03"
+    },
+    {
+      "ticker": "VOO",
+      "url": "https://investor.vanguard.com/investment-products/etfs/profile/voo",
+      "type": "ETF",
+      "fullName": "Vanguard S&P 500 ETF",
+      "grossAsOfDate": "04/29/2025",
+      "netAsOfDate": "04/29/2025",
+      "netExpenseRatio": "0.0300",
+      "grossExpenseRatio": "0.0300"
+    },
+    {
+      "ticker": "SPY",
+      "url": "https://www.ssga.com/us/en/intermediary/etfs/spdr-sp-500-etf-trust-spy",
+      "type": "ETF",
+      "fullName": "SPDR S&P 500 ETF",
+      "grossAsOfDate": "08/11/2025",
+      "netAsOfDate": "08/11/2025",
+      "netExpenseRatio": "0.0945",
+      "grossExpenseRatio": "0.0945"
+    }
+  ],
+  "metadata": {
+    "created": "2025-08-11"
+  }
+}

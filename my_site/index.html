@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title> Vladimir Gonzalez Migal</title>
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vladimir Gonzalez Migal's personal webpage.">
+  <meta name="keywords" content="Vladimir, Gonzalez, Migal, personal, webpage, Stanford, software, engineer">
+  <meta name="author" content="Vladimir Gonzalez Migal">
+</head>
+
+<body>
+  <script src="utils.js"></script>
+  <!-- Header / Name -->
+  <header>
+    <h1>Vladimir Gonzalez</h1>
+    <h4>Hello! I'm a Master's student in Computer Science at Stanford. I'm passionate about building useful products,
+      with a soft spot for fintech.</h4>
+  </header>
+
+  <!-- Professional Experience -->
+  <section>
+    <h2>Previously I </h2>
+    <ul>
+      <li>
+        <h3>
+          Launched the
+          <a href="https://www.verifone.com/en/us/verifone-tap" target="_blank">
+            Tap to Pay on iPhone & Android SDK
+          </a>
+          at Verifone
+        </h3>
+      </li>
+      <li>
+        <h3>Founded a roboadvisory firm (still hold a Series 65 license)</h3>
+      </li>
+      <li>
+        <h3>Created a bot that automatically detects arbitrage across prediction markets</h3>
+      </li>
+    </ul>
+  </section>
+
+  <hr>
+
+
+  <!-- Portfolio Philosophy -->
+  <section>
+    <h2> Portfolio Tools Preview </h2>
+    <p> Disclaimer: The content on this site is independent of my previous roboadvisor firm. All content here is free
+      and educational.</p>
+    <p> If interested, Please click <a href=""><u>here</u></a> to learn more about my personal investment philosophy</p>
+  </section>
+
+  <!-- Tools Section (clearly distinct from above) -->
+
+  <section>
+
+    <h3> S&P 500 Funds – Live Expense Ratios. (Learn more coming soon). </h3>
+
+    <funds-table></funds-table>
+    <script src="spyTable.js"></script>
+    
+    <script>
+      fetch('sp500_cached_data.json')
+        .then(response => response.json())
+        .then(json => {
+          const funds = json.data.map(f => ({
+            ticker: f.ticker,
+            name: f.fullName,
+            type: f.type,
+            net_expense_ratio: parseFloat(f.netExpenseRatio),
+            updated_at: f.netAsOfDate
+          }));
+          document.querySelector("funds-table").data = sortByNetExpenseRatio(funds);
+        });
+    </script>
+
+    <h3>Stock, Bond Index Portfolio Modeling (Coming Soon)</h3>
+
+    <h3><u>My thoughts on the Barbell Portfolio</u></h3>
+
+    <p>If you’re curious or want to chat, feel free to reach out: <a
+        href="mailto:vladgm24@stanford.edu">vladgm24@stanford.edu</a></p>
+
+  </section>
+
+</body>
+
+</html>
